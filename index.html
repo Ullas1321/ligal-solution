@@ -4,8 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- font family -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  .garamond{
+    font-family: 'EB Garamond', serif;
+  }
+</style>
+</head>
+<body class="garamond">
+    
+    <header class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1</a></li>
+                <li tabindex="0">
+                  <details>
+                    <summary>Parent</summary>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </details>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Button</a>
+            </div>
+          </div>
+
+        
+          <!-- banner section  -->
+          <section class="w-full h-[700px] bg-no-repeat bg-cover relative" style="background-image: url('images/banner.png');">
+            <div class="w-[750px]  text-center absolute mt-48 ml-96">
+            <h2 class="text-7xl font-extrabold text-[#fff]">We Provide Effective Legal Solutions</h2>
+            <p class="text-xl text-[#E7E7E7] font-normal mt-6 mb-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <label for="search">
+              <input type="text" class="w-[500px] h-[60px] bg-[#FFF] rounded-xl placeholder:text-xl indent-5" name="text" id="text" placeholder="Search your services">
+            </label>
+            &nbsp; &nbsp;<button class="h-[60px] w-[120px] rounded-xl text-[#fff] font-bold text-xl bg-[#B68C5A] capitalize">search</button>
+          </div>
+          </section>
+    </header>
+    <main class="container mx-auto">
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
